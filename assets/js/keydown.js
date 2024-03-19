@@ -14,21 +14,21 @@ const colorChange = (elemento, color) => {
   elemento.style.backgroundColor = color;
 };
 document.addEventListener("keydown", function (event) {
-  if (event.key === "a") {
+  if (event.key === "a" || event.key === "A") {
     colorChange(box, "pink");
-  } else if (event.key === "s") {
+  } else if (event.key === "s" || event.key === "S") {
     colorChange(box, "orange");
-  } else if (event.key === "d") {
+  } else if (event.key === "d" || event.key === "D") {
     colorChange(box, "lightblue");
   }
 });
 
 document.addEventListener("keydown", function (event) {
-  if (event.key === "q") {
-    colorChange(box2, "purple");
-  } else if (event.key === "w") {
+  if (event.key === "q" || event.key === "Q" ) {
+    colorChange(box2, "purple" );
+  } else if (event.key === "w" || event.key === "W") {
     colorChange(box2, "gray");
-  } else if (event.key === "e") {
+  } else if (event.key === "e" || event.key === "E") {
     colorChange(box2, "brown");
   }
 });
